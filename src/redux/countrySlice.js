@@ -21,3 +21,26 @@ export const fetchCountries = createAsyncThunk('countries/fetchCountries', async
     throw new Error(`Error fetching data: ${error.message}`);
   }
 });
+
+// SLICE
+const countrySlice = createSlice({
+  name: 'country',
+  initialState,
+  reducers: {},
+  extraReducers: (builder) => {
+    builder
+      .addCase(fetchCountries.pending, (state) => {
+        state.status = 'loading';
+      })
+      .addCase(fetchCountries.fulfilled, (state, action) => {
+        state.status = 'succeeded';
+        state.countries = action.payload;
+      })
+      .addCase(fetchCountries.rejected, (state, action) => {
+        state.status = 'failed';
+        state.error = action.error.message;
+      });
+  },
+});
+
+export default countrySlice.reducer;
