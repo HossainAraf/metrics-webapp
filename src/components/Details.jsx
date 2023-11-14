@@ -12,21 +12,21 @@ const Card = ({ label, value }) => (
 
 const Details = () => {
   const params = useParams();
-  const { subregion } = params;
+  const { details } = params;
   const countries = useSelector((state) => state.countries.countries);
 
-  const selectedCountry = countries.find((country) => country.name === subregion);
+  const selectedCountry = countries.find((country) => country.name === details);
 
   return (
     <div>
       <div className="">
         <div className="">
           <div>
-            <img src={selectedCountry?.flag} alt={subregion} className="" />
+            <img src={selectedCountry?.flag} alt={details} className="" />
           </div>
         </div>
         <div className="">
-          <h1 className="">{subregion?.toUpperCase()}</h1>
+          <h1 className="">{details?.toUpperCase()}</h1>
           <h3 className="">{`Population: ${selectedCountry?.population}`}</h3>
         </div>
       </div>

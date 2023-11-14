@@ -1,5 +1,3 @@
-// Navbar.js
-import { FaChevronLeft, FaCog, FaMicrophone } from 'react-icons/fa';
 import React from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 
@@ -27,16 +25,13 @@ const Nav = () => {
     <>
       <nav className="">
         <div className="">
-          <NavLink to="/">
-            <FaChevronLeft />
-          </NavLink>
+          <NavLink to="/">Home</NavLink>
           <p>{displayText}</p>
         </div>
         <div className="">most views</div>
         <div className="">
           <div> </div>
-          <FaMicrophone />
-          <FaCog />
+
         </div>
       </nav>
     </>
