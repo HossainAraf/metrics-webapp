@@ -1,7 +1,7 @@
 // IMPORTS
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
-//INITIAL STATE
+// INITIAL STATE
 const initialState = {
   countries: [],
   status: 'idle',
