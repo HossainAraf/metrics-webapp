@@ -9,8 +9,14 @@ const CountryFilter = () => {
 
   // SELECT STATE FROM REDUX STORE
   const countries = useSelector((state) => state.countries.countries);
-// USE USEEFEECT TO DISPATCH FETCHCOUNTRIES ACTION
+  // USE USEEFEECT TO DISPATCH FETCHCOUNTRIES ACTION
   useEffect(() => {
     dispatch(fetchCountries());
   }, [dispatch]);
 
+  // FILTER COUNTRIES BY REGION
+  const filteredCountries = countries.filter((country) => country.region === 'Asia');
+  return filteredCountries;
+};
+
+export default CountryFilter;
