@@ -6,3 +6,11 @@ import { fetchCountries } from '../redux/countrySlice';
 // COMPONENTS
 const CountryFilter = () => {
   const dispatch = useDispatch();
+
+  // SELECT STATE FROM REDUX STORE
+  const countries = useSelector((state) => state.countries.countries);
+// USE USEEFEECT TO DISPATCH FETCHCOUNTRIES ACTION
+  useEffect(() => {
+    dispatch(fetchCountries());
+  }, [dispatch]);
+
