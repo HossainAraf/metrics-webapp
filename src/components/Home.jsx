@@ -41,9 +41,9 @@ const Home = () => {
               let backgroundColor;
 
               if (isFirstCol) {
-                backgroundColor = isEvenRow ? '#dc4681' : '#000';
+                backgroundColor = isEvenRow ? '#dc4681' : '#d04379';
               } else {
-                backgroundColor = isEvenRow ? '#000' : '#dc4681';
+                backgroundColor = isEvenRow ? '#d04379' : '#dc4681';
               }
 
               return (

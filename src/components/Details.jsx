@@ -2,6 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import '../styles/details.css';
 
 const Card = ({ label, value }) => (
   <li className="">
@@ -21,8 +22,12 @@ const Details = () => {
     <div>
       <div className="">
         <div className="">
-          <div>
+          <div className="img-wrapper">
             <img src={selectedCountry?.flag} alt={details} className="" />
+          </div>
+          <div className="country-title">
+            <Card value={selectedCountry?.name} />
+            <Card value={selectedCountry?.population} />
           </div>
         </div>
         <div className="">

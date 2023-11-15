@@ -20,8 +20,8 @@ const Nav = () => {
         </div>
         <div>
           {!isHome && (
-            <div className="country-detail-page">
-              Country
+            <div className="country-views">
+              Country views
             </div>
           )}
           {isHome && (
