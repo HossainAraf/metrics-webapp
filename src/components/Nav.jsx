@@ -1,37 +1,37 @@
 import React from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
+import { FaChevronLeft, FaCog, FaMicrophone } from 'react-icons/fa';
 
 const Nav = () => {
   const location = useLocation();
-  const currentPathname = location.pathname;
-
-  let displayText = 'Home';
-
-  if (currentPathname === '/Bangladesh' || currentPathname === '/bangladesh') {
-    displayText = 'Bangladesh';
-  } else if (currentPathname === '/India' || currentPathname === '/india') {
-    displayText = 'India';
-  } else if (currentPathname === '/Bhutan' || currentPathname === '/bhutan') {
-    displayText = 'Bhutan';
-  } else if (currentPathname === '/Srilanka' || currentPathname === '/srilanka') {
-    displayText = 'Srilanka';
-  } else if (currentPathname === '/Nepal' || currentPathname === '/nepal') {
-    displayText = 'Nepal';
-  } else if (currentPathname === '/Pakistan' || currentPathname === '/pakistan') {
-    displayText = 'Pakistan';
-  }
+  const isHome = location.pathname === '/';
 
   return (
     <>
       <nav className="">
         <div className="">
-          <NavLink to="/">Home</NavLink>
-          <p>{displayText}</p>
+          <NavLink to="/" exact>
+            <span className="left-arrow" style={{ color: '#000' }}>
+              <FaChevronLeft />
+              2023
+            </span>
+          </NavLink>
         </div>
-        <div className="">most views</div>
-        <div className="">
-          <div> </div>
-
+        {!isHome && (
+          <div className="country-detail-page">
+            <NavLink to="/country">Country</NavLink>
+          </div>
+        )}
+        {isHome && (
+          <div className="most-views">
+            Most views
+          </div>
+        )}
+        <div className="settings">
+          <FaCog />
+        </div>
+        <div className="voice-search">
+          <FaMicrophone />
         </div>
       </nav>
     </>
