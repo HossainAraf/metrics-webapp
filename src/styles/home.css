@@ -1,0 +1,16 @@
+.container {
+  background-color: #fd5294;
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+}
+
+.card-container img {
+  max-width: 80%;
+  margin-top: 10%;
+  margin-left: 10%;
+}
