@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import { BsArrowRightCircle } from 'react-icons/bs';
 import { Container, Row, Col } from 'react-bootstrap';
 import '../styles/card.css';
 
@@ -14,6 +15,7 @@ const Card = ({
             <img src={imageSrc} alt={title} className="" />
           </Col>
           <Col xs={6} md={6} lg={6}>
+            <BsArrowRightCircle className="" />
             <div className="">
               <span className="">{title}</span>
               <span className="">{subtitle}</span>
