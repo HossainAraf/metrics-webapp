@@ -34,25 +34,29 @@ const Home = () => {
 
       {chunkArray(filteredCountries, 2).map((rowCountries, rowIndex) => (
         <Row key={rowCountries[0].alpha2code}>
-          {rowCountries.map((country, colIndex) => (
-            <Col className="card-container" key={country.alpha2code} xs={6} md={6} lg={6}>
-              <Card
-                to={`/${country.name}`}
-                title={country.name}
-                backgroundColor={
-                  (rowIndex === 0 && colIndex === 0)
-                  || (rowIndex === 1 && colIndex === 1)
-                  || (rowIndex === 2 && colIndex === 0)
-                  || (rowIndex === 3 && colIndex === 1)
-                  || (rowIndex === 4 && colIndex === 0) // first country in the fifth row
-                    ? '#dc4681'
-                    : '#d1447a'
-                }
-                population={country.population}
-                imageSrc={country.flag}
-              />
-            </Col>
-          ))}
+          {rowCountries.map((country, colIndex) => {
+            const isEvenRow = rowIndex % 2 === 0;
+            const isFirstCol = colIndex === 0;
+            const backgroundColor = isFirstCol
+              ? isEvenRow
+                ? '#dc4681'
+                : '#000'
+              : isEvenRow
+                ? '#000'
+                : '#dc4681';
+
+            return (
+              <Col className="card-container" key={country.alpha2code} xs={6} md={6} lg={6}>
+                <Card
+                  to={`/${country.name}`}
+                  title={country.name}
+                  backgroundColor={backgroundColor}
+                  population={country.population}
+                  imageSrc={country.flag}
+                />
+              </Col>
+            );
+          })}
         </Row>
       ))}
     </Container>
