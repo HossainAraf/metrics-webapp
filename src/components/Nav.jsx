@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { FaChevronLeft, FaCog, FaMicrophone } from 'react-icons/fa';
+import '../styles/nav.css';
 
 const Nav = () => {
   const location = useLocation();
@@ -8,30 +9,30 @@ const Nav = () => {
 
   return (
     <>
-      <nav className="">
-        <div className="">
+      <nav className="navbar">
+        <div className="left-arrow-wrapper">
           <NavLink to="/" exact>
-            <span className="left-arrow" style={{ color: '#000' }}>
+            <span className="left-arrow">
               <FaChevronLeft />
               2023
             </span>
           </NavLink>
         </div>
-        {!isHome && (
-          <div className="country-detail-page">
-            <NavLink to="/country">Country</NavLink>
-          </div>
-        )}
-        {isHome && (
-          <div className="most-views">
-            Most views
-          </div>
-        )}
-        <div className="settings">
-          <FaCog />
+        <div>
+          {!isHome && (
+            <div className="country-detail-page">
+              Country
+            </div>
+          )}
+          {isHome && (
+            <div className="most-views">
+              Most views
+            </div>
+          )}
         </div>
-        <div className="voice-search">
-          <FaMicrophone />
+        <div className="tech">
+          <FaCog />
+          <FaMicrophone className="microphone" />
         </div>
       </nav>
     </>
