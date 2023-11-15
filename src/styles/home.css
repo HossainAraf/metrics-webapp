@@ -11,12 +11,10 @@ h2 {
 }
 
 .card-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-self: center;
+  margin: 0;
+  padding: 0;
 }
 
-.card-container img {
+/* .card-container img {
   max-width: 80%;
-}
+} */

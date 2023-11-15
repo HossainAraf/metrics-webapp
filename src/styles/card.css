@@ -6,6 +6,11 @@
   padding-top: 1%;
 }
 
+.img-wrapper img {
+  max-width: 85%;
+  max-height: 4rem;
+}
+
 .card-arrow {
   color: white;
 }
