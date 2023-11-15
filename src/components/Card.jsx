@@ -10,23 +10,22 @@ const Card = ({
   <Link to={to} className="">
     <div className="" style={{ backgroundColor }}>
       <Container fluid>
-        <Row className="">
-          <Col xs={6} md={6} lg={6}>
-            <img src={imageSrc} alt={title} className="" />
+        <Col className="">
+          <Row>
+            <Col className="img-wrapper">
+              <img src={imageSrc} alt={title} className="" />
+              <BsArrowRightCircle className="card-arrow" />
+            </Col>
+          </Row>
+          <Col className="name-population-wrapper">
+            <span className="">{title}</span>
+            <span className="">{subtitle}</span>
+            <span className="">
+              {' '}
+              {population}
+            </span>
           </Col>
-          <Col xs={6} md={6} lg={6}>
-            <BsArrowRightCircle className="" />
-            <div className="">
-              <span className="">{title}</span>
-              <span className="">{subtitle}</span>
-              <span className="">
-                Population:
-                {' '}
-                {population}
-              </span>
-            </div>
-          </Col>
-        </Row>
+        </Col>
       </Container>
     </div>
   </Link>

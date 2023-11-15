@@ -2,6 +2,14 @@
   background-color: #fd5294;
 }
 
+#written-content {
+  padding: 5%;
+}
+
+h2 {
+  font-weight: 700;
+}
+
 .card-container {
   display: flex;
   align-items: center;
@@ -11,6 +19,4 @@
 
 .card-container img {
   max-width: 80%;
-  margin-top: 10%;
-  margin-left: 10%;
 }

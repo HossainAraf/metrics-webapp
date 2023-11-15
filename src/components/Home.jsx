@@ -24,13 +24,12 @@ const Home = () => {
         <Col>
           <img src={asiaImage} alt="asia" style={{ maxWidth: '100%' }} />
         </Col>
-        <Col>
-          <h1>Asia</h1>
-          <h3>Population: 4,764,955,914</h3>
+        <Col id="written-content">
+          <h2>ASIA</h2>
+          <h5>Population: 4,764,955,914</h5>
         </Col>
       </Row>
-
-      <div className="">STATS BY COUNTRY</div>
+      <div className=""><h6>STATS BY COUNTRY</h6></div>
 
       {chunkArray(filteredCountries, 2).map((rowCountries, rowIndex) => {
         const isEvenRow = rowIndex % 2 === 0;
