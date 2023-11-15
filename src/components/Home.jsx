@@ -1,5 +1,6 @@
 // IMPORTS
 import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
 import asiaImage from '../assets/asia.png';
 import CountryFilter from './CountryFilter';
 import Card from './Card';
@@ -7,16 +8,16 @@ import Card from './Card';
 const Home = () => {
   const filteredCountries = CountryFilter();
   return (
-    <div>
-      <div className="">
-        <div className="">
+    <Container>
+      <Row className="">
+        <Col className="">
           <img src={asiaImage} alt="asia" />
-        </div>
-        <div className="">
+        </Col>
+        <Col className="">
           <h1 className=""> Asia </h1>
-          <h3 className="">Population:  96,618,159</h3>
-        </div>
-      </div>
+          <h3 className="">Population:  4,764,955,914</h3>
+        </Col>
+      </Row>
 
       <div className="">STATS BY COUNTRY</div>
       <div className="" id="container">
@@ -33,7 +34,7 @@ const Home = () => {
           ))}
         </div>
       </div>
-    </div>
+    </Container>
   );
 };
 
