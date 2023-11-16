@@ -4,9 +4,9 @@
   <img src="./public/logo512.png" alt="logo" width="140"  height="auto" />
   <h1><b>Metrics Webapp</b></h1>
 </div>
-<div align="center">
-  <img src="./public/cover.png" alt="cover"   height="auto" />
-</div>
+
+
+![image](https://github.com/HossainAraf/metrics-webapp/blob/deploy/src/assets/screen.png)
 
 # 📗 Table of Contents
 
@@ -78,7 +78,7 @@ This project is a simple metrics app. The main features are:
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Live Demo Link]()
+- [Live Demo Link](https://populaton-metricapp2023.onrender.com/)
 - [Video description]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -142,7 +142,6 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 ## 👥 Authors <a name="authors"></a>
 
-### First Author:
 
 👤 **Md Arafat Hossain**
 
