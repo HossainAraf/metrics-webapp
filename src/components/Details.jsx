@@ -21,7 +21,7 @@ const Details = () => {
   return (
     <div>
       <div className="">
-        <div className="">
+        <div className="top-container">
           <div className="img-wrapper">
             <img src={selectedCountry?.flag} alt={details} className="" />
           </div>
@@ -30,14 +30,10 @@ const Details = () => {
             <Card value={selectedCountry?.population} />
           </div>
         </div>
-        <div className="">
-          <h1 className="">{details?.toUpperCase()}</h1>
-          <h3 className="">{`Population: ${selectedCountry?.population}`}</h3>
-        </div>
       </div>
-      <div className="">STATS BY COUNTRY</div>
-      <div>
-        <ul>
+      <div className="center">COUNTRY BREAKDOWN - 2023</div>
+      <div className="country-details-wrapper">
+        <ul className="country-details">
           <Card label="CAPITAL" value={selectedCountry?.capital} />
           <Card label="POPULATION" value={selectedCountry?.population} />
           <Card label="AREA" value={selectedCountry?.area} />

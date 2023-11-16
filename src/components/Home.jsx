@@ -29,7 +29,7 @@ const Home = () => {
           <h5>Population: 4,764,955,914</h5>
         </Col>
       </Row>
-      <div className=""><h6>STATS BY COUNTRY</h6></div>
+      <Row className="center">STATS BY COUNTRY</Row>
 
       {chunkArray(filteredCountries, 2).map((rowCountries, rowIndex) => {
         const isEvenRow = rowIndex % 2 === 0;

@@ -7,8 +7,7 @@
 }
 
 .img-wrapper img {
-  max-width: 85%;
-  max-height: 4rem;
+  max-height: 3rem;
 }
 
 .card-arrow {
@@ -20,7 +19,7 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
-  padding-top: 1%;
+  padding-top: 5%;
 }
 
 span {
