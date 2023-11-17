@@ -1,0 +1,29 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ec4c8b;
+}
+
+.left-arrow {
+  color: #fcd5e5;
+  margin-left: 0.05rem;
+  margin-right: 1.8rem;
+}
+
+.most-views,
+.country-views {
+  color: #f0b3cb;
+}
+
+.navbar .tech {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fcd5e5;
+}
+
+.microphone {
+  margin-left: 1rem;
+  margin-right: 0.09rem;
+}

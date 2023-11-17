@@ -1,0 +1,29 @@
+.img-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 2%;
+  padding-top: 1%;
+}
+
+.img-wrapper img {
+  max-height: 3rem;
+}
+
+.card-arrow {
+  color: white;
+}
+
+.name-population-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-top: 5%;
+}
+
+span {
+  color: white;
+  font-size: 70%;
+  text-transform: uppercase;
+}

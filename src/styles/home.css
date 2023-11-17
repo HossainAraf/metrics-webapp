@@ -1,0 +1,25 @@
+.container {
+  background-color: #fd5294;
+}
+
+#written-content {
+  padding: 5%;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+.card-container {
+  margin: 0;
+  padding: 0;
+}
+
+.center {
+  background-color: #df4683;
+}
+
+.center form .input-search {
+  width: 90%;
+  height: 75%;
+}
