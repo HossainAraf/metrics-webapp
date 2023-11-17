@@ -19,6 +19,7 @@ h2 {
   background-color: #df4683;
 }
 
-/* .card-container img {
-  max-width: 80%
-} */
+.center form .input-search {
+  width: 90%;
+  height: 75%;
+}

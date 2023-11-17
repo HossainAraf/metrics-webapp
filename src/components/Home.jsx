@@ -1,7 +1,7 @@
 // IMPORTS
 import React, { useState } from 'react';
 import {
-  Container, Row, Col, Form, FormControl, Button,
+  Container, Row, Col, Form, FormControl,
 } from 'react-bootstrap';
 import asiaImage from '../assets/asia.png';
 import CountryFilter from './CountryFilter';
@@ -34,16 +34,20 @@ const Home = () => {
         </Col>
       </Row>
       <Row className="center">
-        STATS BY COUNTRY
-        <Form inline>
-          <FormControl
-            type="text"
-            placeholder="Search country..."
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-          />
-          <Button variant="outline-primary">Search</Button>
-        </Form>
+        <Col>
+          STATS BY COUNTRY
+        </Col>
+        <Col>
+          <Form>
+            <FormControl
+              className="input-search"
+              type="text"
+              placeholder="Search country..."
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+            />
+          </Form>
+        </Col>
       </Row>
 
       {chunkArray(filteredCountries, 2).map((rowCountries, rowIndex) => {
