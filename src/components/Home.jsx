@@ -1,12 +1,12 @@
 // IMPORTS
-import React from 'react';
+import React, { useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import asiaImage from '../assets/asia.png';
 import CountryFilter from './CountryFilter';
 import Card from './Card';
 import '../styles/home.css';
 
-// Function to chunk the array into subarrays
+// FUNCTION TO CHUNK ARRAY INTO ROWS
 function chunkArray(array, chunkSize) {
   const result = [];
   for (let i = 0; i < array.length; i += chunkSize) {
@@ -16,7 +16,9 @@ function chunkArray(array, chunkSize) {
 }
 
 const Home = () => {
-  const filteredCountries = CountryFilter();
+  const [searchTerm, setSearchTerm] = useState('');
+
+  const filteredCountries = CountryFilter(searchTerm);
 
   return (
     <Container>
