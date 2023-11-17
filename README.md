@@ -79,7 +79,7 @@ This project is a simple metrics app. The main features are:
 
 
 - [Live Demo Link](https://populaton-metricapp2023.onrender.com/)
-- [Video description]()
+- [Video description](https://www.loom.com/share/8246eb5a79d149069ebf3cb75ff3e4e1?sid=eda8c419-7687-40d0-ac30-e1bb56439f6e)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -155,6 +155,9 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 - [ ] **We will implement city details page**
 - [ ] **We will implement API data for all continents**
 - [ ] **We will implement google map**
+- [ ] **We will implement voice search**
+- [ ] **We will add functionality to the setting icon of Navbar**
+- [ ] **We will make this app responsible for all screen sizes**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
