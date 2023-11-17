@@ -1,6 +1,8 @@
 // IMPORTS
 import React, { useState } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import {
+  Container, Row, Col, Form, FormControl, Button,
+} from 'react-bootstrap';
 import asiaImage from '../assets/asia.png';
 import CountryFilter from './CountryFilter';
 import Card from './Card';
@@ -31,7 +33,18 @@ const Home = () => {
           <h5>Population: 4,764,955,914</h5>
         </Col>
       </Row>
-      <Row className="center">STATS BY COUNTRY</Row>
+      <Row className="center">
+        STATS BY COUNTRY
+        <Form inline>
+          <FormControl
+            type="text"
+            placeholder="Search country..."
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+          />
+          <Button variant="outline-primary">Search</Button>
+        </Form>
+      </Row>
 
       {chunkArray(filteredCountries, 2).map((rowCountries, rowIndex) => {
         const isEvenRow = rowIndex % 2 === 0;
