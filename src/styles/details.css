@@ -60,3 +60,22 @@ body {
 .country-details li:nth-child(even) {
   background-color: #cd4076;
 }
+
+/* Responsive design */
+@media screen and (min-width: 480px) {
+  .country-details-wrapper {
+    margin-left: -7%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .country-details-wrapper {
+    margin-left: -4%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .country-details-wrapper {
+    margin-left: -3%;
+  }
+}
