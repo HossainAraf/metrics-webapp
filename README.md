@@ -79,7 +79,7 @@ This project is a simple metrics app. The main features are:
 
 
 - [Live Demo Link](https://populaton-metricapp2023.onrender.com/)
-- [Video description](https://www.loom.com/share/8246eb5a79d149069ebf3cb75ff3e4e1?sid=eda8c419-7687-40d0-ac30-e1bb56439f6e)
+- [Video description]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
